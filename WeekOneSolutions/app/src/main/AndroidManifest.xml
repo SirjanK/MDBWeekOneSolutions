@@ -18,9 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LargeTextActivity" >
+        <activity
+            android:name=".LargeTextActivity"
+            android:label="@string/long_text_name" >
         </activity>
-        <activity android:name=".ImageActivity" >
+        <activity
+            android:name=".ImageActivity"
+            android:label="@string/image_text">
         </activity>
     </application>
 

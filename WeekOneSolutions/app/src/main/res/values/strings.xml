@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">WeekOneSolutions</string>
+    <string name="app_name">Week One Mini-project</string>
+    <string name="long_text_name">Bunchload of Text</string>
+    <string name="image_text">Gallery Image</string>
     <string name="action_settings">Settings</string>
     <string name="pic_button">Choose a Picture</string>
     <string name="email_button">Email MDB</string>
