@@ -82,16 +82,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        switch (requestCode) { // You can use if statements, but with multiple requestCodes, this is better
-            case SELECT_PHOTO:
-                Uri selectedImage = data.getData();
-                sendImage(selectedImage);
-                break;
+        if (resultCode == RESULT_OK) {
+            switch (requestCode) { // You can use if statements, but with multiple requestCodes, this is better
+                case SELECT_PHOTO:
+                    Uri selectedImage = data.getData();
+                    sendImage(selectedImage);
+                    break;
+            }
         }
     }
 
     private void pickPhoto() {
-        Intent photoIntent = new Intent(Intent.ACTION_PICK);
+        Intent photoIntent = new Intent(Intent.ACTION_GET_CONTENT);
         photoIntent.setType("image/*");
         if (photoIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(photoIntent, SELECT_PHOTO);
