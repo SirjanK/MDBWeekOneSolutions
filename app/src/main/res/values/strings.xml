@@ -1,3 +1,5 @@
+<!-- Bunchload of my strings -->
+<!-- Place them all in here so your java code doesn't get littered -->
 <resources>
     <string name="app_name">Week One Mini-project</string>
     <string name="long_text_name">Bunchload of Text</string>

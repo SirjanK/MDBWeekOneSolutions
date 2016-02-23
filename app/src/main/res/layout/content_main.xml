@@ -9,15 +9,17 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
+    <!-- I did it with a Linear Layout. You could have also done a Relative Layout -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"> <!-- Vertical because it looks better -->
+        <!-- Don't hardcode -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pic_button"
-            android:id="@+id/pic_btn"/>
+            android:id="@+id/pic_btn"/> <!-- IDS ARE IMPORTANT -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
